@@ -1,0 +1,27 @@
+{
+  "name": "RetailHub – Dindigul Local Shopping",
+  "short_name": "RetailHub",
+  "description": "Discover and shop from local stores in Dindigul",
+  "start_url": "/user/index.html",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text y='.9em' font-size='70' x='15'>🛍️</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text y='.9em' font-size='70' x='15'>🛍️</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr"
+}
