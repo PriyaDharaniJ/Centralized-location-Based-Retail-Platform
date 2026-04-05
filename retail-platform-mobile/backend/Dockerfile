@@ -1,10 +1,8 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN chmod +x mvnw
-RUN ./mvnw dependency:go-offline
+RUN apk add --no-cache maven
+COPY pom.xml ./
 COPY src ./src
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 EXPOSE 8081
 ENTRYPOINT ["java", "-jar", "target/retail-platform-1.0.0.jar"]
