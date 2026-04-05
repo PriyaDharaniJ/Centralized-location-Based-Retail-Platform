@@ -664,7 +664,7 @@ function updateAuthUI() {
 function connectWS() {
   if (!state.user) return;
   try {
-    const sock = new SockJS('http://localhost:8081/ws');
+    const sock = new SockJS('https://centralized-location-based-retail.onrender.com/ws');
     state.stompClient = Stomp.over(sock);
     state.stompClient.debug = null;
     state.stompClient.connect({}, () => {

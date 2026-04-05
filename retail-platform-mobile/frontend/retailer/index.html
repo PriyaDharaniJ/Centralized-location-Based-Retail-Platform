@@ -364,7 +364,7 @@ tr:hover td{background:var(--surface2)}
 <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Switch Theme">🌅</button>
 
 <script>
-const API = 'http://localhost:8081/api';
+const API = 'https://centralized-location-based-retail.onrender.com/api';
 let S = { retailer:null, token:null, products:[], orders:[], categories:[], filter:'ALL', stomp:null };
 
 function h(path, extra={}) {
@@ -451,7 +451,8 @@ function bootApp() {
 
 function connectWS() {
   try {
-    const sock = new SockJS('http://localhost:8081/ws');
+    
+    const sock = new SockJS('https://centralized-location-based-retail.onrender.com/ws');
     S.stomp = Stomp.over(sock);
     S.stomp.debug = null;
     S.stomp.connect({}, () => {
