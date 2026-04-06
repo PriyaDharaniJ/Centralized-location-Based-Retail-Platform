@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8081/api';
+const API_BASE = 'https://centralized-location-based-retail.onrender.com/api';
 const api = {
     token: () => localStorage.getItem('rp_token'),
     getUser: () => JSON.parse(localStorage.getItem('rp_user') || 'null'),
